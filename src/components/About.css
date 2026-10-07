@@ -281,16 +281,27 @@
 
 @media (max-width: 640px) {
   .about-primary-img {
-    height: 340px;
+    height: 320px;
+  }
+  .about-floating-badge {
+    padding: 1rem 1.25rem;
+  }
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+  .about-actions .btn {
+    width: 100%;
   }
   .about-stats-strip {
     grid-template-columns: 1fr;
-    padding: 1.75rem;
+    padding: 1.5rem 1.25rem;
   }
   .philosophy-modal-grid {
     grid-template-columns: 1fr;
   }
   .philosophy-modal-content {
-    padding: 1.75rem;
+    padding: 1.75rem 1.25rem;
   }
 }

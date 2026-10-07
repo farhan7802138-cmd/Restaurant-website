@@ -235,6 +235,7 @@ button, input, select, textarea {
   border: 1px solid transparent;
   text-decoration: none;
   line-height: 1;
+  white-space: nowrap;
 }
 
 .btn-primary-gold {

@@ -35,10 +35,11 @@
 }
 
 .final-cta-title {
-  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  font-size: clamp(2rem, 4.5vw, 3.6rem);
   line-height: 1.15;
   color: var(--text-primary);
   margin-bottom: 1.25rem;
+  word-break: break-word;
 }
 
 .final-cta-desc {
@@ -86,5 +87,23 @@
 @media (max-width: 768px) {
   .final-cta-card {
     padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .final-cta-card {
+    padding: 2.5rem 1.25rem;
+  }
+  .final-cta-desc {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .final-cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.85rem;
+  }
+  .final-cta-buttons .btn {
+    width: 100%;
   }
 }

@@ -14,8 +14,8 @@ export const restaurantInfo = {
   hours: [
     { days: "Monday – Friday", meal: "Breakfast & Lunch Cafe", time: "7:00 AM – 7:00 PM" },
     { days: "Saturday – Sunday", meal: "Weekend Kitchen & Cafe", time: "8:00 AM – 4:00 PM" },
-    { days: "Daily", meal: "Curbside Pickup & Delivery", time: "Fresh Daily Service" },
-    { days: "Catering & Private Dining", meal: "By Advance Reservation", time: "Tailored to Your Schedule" }
+    { days: "Daily Delivery", meal: "Curbside & Doorstep", time: "Fresh Daily Service" },
+    { days: "Catering & Events", meal: "Corporate & Private", time: "Advance Reservation" }
   ],
   stats: [
     { number: "10+", label: "Years of Culinary Mastery", subtext: "Founded by Barbara Bolotte Blank" },

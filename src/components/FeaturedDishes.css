@@ -323,10 +323,40 @@
 }
 
 @media (max-width: 640px) {
+  .category-tabs-container {
+    padding: 0 0.25rem;
+    width: 100%;
+    margin-bottom: 2.25rem;
+  }
+  .category-tabs {
+    width: 100%;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .category-tab-btn {
+    padding: 0.55rem 1.15rem;
+    font-size: 0.82rem;
+  }
   .dishes-grid {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
   }
   .dish-img-container {
-    height: 230px;
+    height: 220px;
+  }
+  .dish-info {
+    padding: 1.35rem;
+  }
+  .menu-cta-banner {
+    padding: 1.75rem 1.25rem;
+  }
+  .menu-cta-btn,
+  .menu-cta-btn .btn {
+    width: 100%;
   }
 }

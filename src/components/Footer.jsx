@@ -46,8 +46,8 @@ export default function Footer({ onOpenMenuModal, onOpenReservationModal }) {
         <div className="container newsletter-container">
           <div className="newsletter-text">
             <span className="newsletter-kicker text-gold">The Clean Creations Newsletter</span>
-            <h3 className="newsletter-title font-serif">Receive Seasonal Menu Releases & Wholesome Inspiration</h3>
-            <p className="newsletter-sub">Curated scratch-kitchen recipes, seasonal meal specials, and healthy living tips sent weekly.</p>
+            <h3 className="newsletter-title font-serif">Receive Seasonal Menus & Wholesome Inspiration</h3>
+            <p className="newsletter-sub">Curated scratch-kitchen recipes, seasonal specials, and wholesome wellness tips.</p>
           </div>
 
           <div className="newsletter-form-wrapper">
@@ -140,7 +140,7 @@ export default function Footer({ onOpenMenuModal, onOpenReservationModal }) {
                 </p>
                 <p className="contact-line">
                   <Mail size={16} className="text-gold flex-shrink-0" />
-                  <a href={`mailto:${restaurantInfo.email}`}>{restaurantInfo.email}</a>
+                  <a href={`mailto:${restaurantInfo.email}`} className="footer-email-link">{restaurantInfo.email}</a>
                 </p>
               </div>
 
@@ -180,7 +180,7 @@ export default function Footer({ onOpenMenuModal, onOpenReservationModal }) {
           {/* Bottom Copyright & Back to Top */}
           <div className="footer-bottom">
             <p className="copyright-text">
-              © 2025 Clean Creations. All rights reserved. Crafted with passion for healthy gourmet living.
+              © 2025 Clean Creations. All rights reserved.
             </p>
 
             <div className="footer-legal-links">

@@ -56,8 +56,8 @@ export default function Navbar({ onOpenMenuModal, onOpenReservationModal }) {
           {/* Desktop Navigation Links */}
           <ul className="nav-links desktop-only">
             <li><a href="#about" className="nav-link">About</a></li>
-            <li><a href="#featured-dishes" className="nav-link">Signature Dishes</a></li>
-            <li><a href="#why-choose-us" className="nav-link">Why Clean Creations</a></li>
+            <li><a href="#featured-dishes" className="nav-link">Dishes</a></li>
+            <li><a href="#why-choose-us" className="nav-link">Why Us</a></li>
             <li><a href="#experience" className="nav-link">Experiences</a></li>
             <li><a href="#reviews" className="nav-link">Reviews</a></li>
             <li><a href="#contact" className="nav-link">Contact</a></li>
