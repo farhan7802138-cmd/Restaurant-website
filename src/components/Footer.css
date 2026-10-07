@@ -376,6 +376,7 @@
     border-radius: var(--radius-full);
     padding: 0.75rem 1.25rem;
     width: 100%;
+    box-sizing: border-box;
   }
   .newsletter-form .btn {
     width: 100%;

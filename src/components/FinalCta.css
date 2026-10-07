@@ -92,7 +92,13 @@
 
 @media (max-width: 640px) {
   .final-cta-card {
-    padding: 2.5rem 1.25rem;
+    padding: 2rem 1.15rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .final-cta-glow {
+    width: 280px;
+    height: 160px;
   }
   .final-cta-desc {
     font-size: 1rem;
