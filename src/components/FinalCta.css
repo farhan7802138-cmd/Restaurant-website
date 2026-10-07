@@ -1,0 +1,90 @@
+.final-cta-section {
+  position: relative;
+  padding: 5rem 0;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+}
+
+.final-cta-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(142, 212, 68, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.final-cta-glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 250px;
+  background: radial-gradient(ellipse, rgba(142, 212, 68, 0.18) 0%, transparent 75%);
+  filter: blur(50px);
+}
+
+.final-cta-card {
+  position: relative;
+  z-index: 2;
+  padding: 4.5rem 3rem;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-lg), 0 10px 40px rgba(142, 212, 68, 0.12);
+}
+
+.final-cta-title {
+  font-size: clamp(2.4rem, 4.8vw, 3.8rem);
+  line-height: 1.15;
+  color: var(--text-primary);
+  margin-bottom: 1.25rem;
+}
+
+.final-cta-desc {
+  max-width: 680px;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2.75rem;
+}
+
+.final-cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.final-cta-contact-strip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cta-phone-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--gold-light);
+  font-weight: 600;
+  transition: color var(--transition-fast);
+}
+
+.cta-phone-link:hover {
+  color: var(--gold-primary);
+}
+
+@media (max-width: 768px) {
+  .final-cta-card {
+    padding: 3rem 1.5rem;
+  }
+}

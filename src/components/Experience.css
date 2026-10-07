@@ -1,0 +1,161 @@
+.experience-section {
+  position: relative;
+  background-color: var(--bg-secondary);
+}
+
+/* Tabs Navigation */
+.exp-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.exp-tab-button {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.exp-tab-button:hover {
+  border-color: var(--gold-secondary);
+  color: var(--text-primary);
+  background: #fdfbf7;
+}
+
+.exp-tab-button.active {
+  background: linear-gradient(135deg, #9ae04e 0%, #8ed444 100%);
+  border-color: var(--gold-primary);
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 4px 20px rgba(142, 212, 68, 0.35);
+}
+
+/* Showcase Card */
+.experience-showcase {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.exp-media-pane {
+  position: relative;
+  height: 480px;
+  overflow: hidden;
+}
+
+.exp-hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.experience-showcase:hover .exp-hero-img {
+  transform: scale(1.04);
+}
+
+.exp-image-tag {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  padding: 0.45rem 1.1rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Details Pane */
+.exp-details-pane {
+  padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.exp-kicker {
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 0.5rem;
+  color: var(--gold-light);
+}
+
+.exp-title {
+  font-size: 2.35rem;
+  color: var(--text-primary);
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.exp-desc {
+  font-size: 1.025rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.exp-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.exp-feature-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+}
+
+.exp-action-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .experience-showcase {
+    grid-template-columns: 1fr;
+  }
+  .exp-media-pane {
+    height: 340px;
+  }
+  .exp-details-pane {
+    padding: 2.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .exp-features-grid {
+    grid-template-columns: 1fr;
+  }
+  .exp-media-pane {
+    height: 260px;
+  }
+}

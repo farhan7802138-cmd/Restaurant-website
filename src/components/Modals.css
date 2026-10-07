@@ -1,0 +1,416 @@
+/* ==========================================================================
+   CLEAN CREATIONS MODAL DIALOGS STYLING (LIGHT LUXURY THEME)
+   ========================================================================== */
+
+.modal-main-title {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: var(--text-primary);
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.modal-sub-title {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 580px;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+/* Dish Modal Specifics */
+.dish-modal-content {
+  max-width: 860px;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.dish-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+}
+
+.dish-modal-media {
+  position: relative;
+  height: 100%;
+  min-height: 420px;
+}
+
+.dish-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dish-modal-tag {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid var(--border-gold);
+  color: var(--gold-light);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.35rem 0.85rem;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dish-modal-price {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background: #ffffff;
+  border: 1.5px solid var(--gold-secondary);
+  color: var(--gold-primary);
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.25rem 1rem;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dish-modal-body {
+  padding: 2.75rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+
+.dish-modal-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.4rem;
+  color: var(--gold-light);
+}
+
+.dish-modal-title {
+  font-size: 1.85rem;
+  color: var(--text-primary);
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.dish-modal-dietary {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.dietary-badge {
+  font-size: 0.72rem;
+  color: var(--gold-light);
+  background: rgba(142, 212, 68, 0.12);
+  border: 1px solid rgba(142, 212, 68, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.calories-badge {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  background: #f4f2ec;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.dish-modal-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.wine-pairing-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: #faf8f5;
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.25rem;
+}
+
+.wine-pairing-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: rgba(142, 212, 68, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--gold-primary);
+}
+
+.wine-pairing-label {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.wine-pairing-name {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.wine-pairing-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.allergens-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Menu Modal Specifics */
+.menu-modal-content {
+  max-width: 940px;
+  padding: 2.75rem 3rem;
+  background: #ffffff;
+}
+
+.tasting-journey-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 1.75rem;
+  border: 1px solid var(--gold-primary);
+  border-radius: var(--radius-md);
+  background: #faf8f5;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.tasting-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tasting-banner-left strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+.tasting-banner-left p {
+  font-size: 0.85rem;
+  color: var(--gold-light);
+}
+
+.tasting-banner-pricing {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.tasting-price {
+  display: block;
+  font-family: var(--font-serif);
+  font-size: 1.45rem;
+  color: var(--gold-primary);
+  font-weight: 700;
+}
+
+.tasting-wine-add {
+  display: block;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.menu-modal-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.menu-modal-tab-btn {
+  background: #faf8f5;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  padding: 0.6rem 1.25rem;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.menu-modal-tab-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--gold-secondary);
+}
+
+.menu-modal-tab-btn.active {
+  background: linear-gradient(135deg, #9ae04e 0%, #8ed444 100%);
+  color: #ffffff;
+  font-weight: 700;
+  border-color: var(--gold-primary);
+}
+
+.menu-items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  margin-bottom: 2.25rem;
+}
+
+.menu-carte-card {
+  padding: 1.35rem 1.5rem;
+  background: #faf8f5;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  border-radius: var(--radius-md);
+}
+
+.menu-carte-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-carte-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.carte-item-name {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.carte-item-tag {
+  font-size: 0.68rem;
+  background: rgba(142, 212, 68, 0.12);
+  color: var(--gold-light);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(142, 212, 68, 0.3);
+  font-weight: 500;
+}
+
+.carte-item-price {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--gold-primary);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.carte-item-desc {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.menu-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.menu-modal-notice {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+/* Reservation Modal Specifics */
+.reservation-modal-content {
+  max-width: 680px;
+  padding: 3rem;
+  background: #ffffff;
+}
+
+.res-modal-inner {
+  display: flex;
+  flex-direction: column;
+}
+
+.res-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.res-modal-form .form-input {
+  background: #faf8f5;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  color: var(--text-primary);
+}
+
+.res-modal-form .form-input:focus {
+  background: #ffffff;
+  border-color: var(--gold-primary);
+}
+
+.res-modal-success {
+  padding: 2rem 0;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.my-4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+@media (max-width: 850px) {
+  .dish-modal-grid {
+    grid-template-columns: 1fr;
+  }
+  .dish-modal-media {
+    min-height: 250px;
+    height: 250px;
+  }
+  .menu-items-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-modal-content, .reservation-modal-content {
+    padding: 2rem 1.5rem;
+  }
+  .tasting-journey-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  .tasting-banner-left {
+    flex-direction: column;
+  }
+  .tasting-banner-pricing {
+    text-align: center;
+  }
+  .menu-modal-footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
