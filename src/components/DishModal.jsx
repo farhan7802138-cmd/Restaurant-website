@@ -78,6 +78,15 @@ export default function DishModal({ dish, onClose, onOpenReservationModal }) {
                 <Calendar size={18} />
                 <span>Reserve Table to Taste This Dish</span>
               </button>
+              <button
+                type="button"
+                className="dish-modal-dismiss-btn"
+                onClick={onClose}
+                id="dish-modal-dismiss-btn"
+              >
+                <X size={16} />
+                <span>Close Details</span>
+              </button>
             </div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -19,6 +19,18 @@ export default function App() {
   const [selectedDish, setSelectedDish] = useState(null);
   const [isMenuModalOpen, setIsMenuModalOpen] = useState(false);
   const [isReservationModalOpen, setIsReservationModalOpen] = useState(false);
+
+  // Prevent background scroll when any modal is open
+  useEffect(() => {
+    if (selectedDish || isMenuModalOpen || isReservationModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [selectedDish, isMenuModalOpen, isReservationModalOpen]);
 
   return (
     <div className="app-container">

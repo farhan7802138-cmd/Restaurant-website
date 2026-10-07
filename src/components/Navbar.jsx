@@ -18,6 +18,17 @@ export default function Navbar({ onOpenMenuModal, onOpenReservationModal }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isMobileMenuOpen]);
+
   const closeMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
@@ -98,9 +109,34 @@ export default function Navbar({ onOpenMenuModal, onOpenReservationModal }) {
         </div>
       </nav>
 
+      {/* Mobile Drawer Backdrop */}
+      <div 
+        className={`mobile-drawer-backdrop ${isMobileMenuOpen ? 'open' : ''}`}
+        onClick={closeMobileMenu}
+        aria-hidden="true"
+      />
+
       {/* Mobile Drawer Navigation */}
-      <div className={`mobile-nav-drawer ${isMobileMenuOpen ? 'open' : ''}`}>
+      <div className={`mobile-nav-drawer ${isMobileMenuOpen ? 'open' : ''}`} role="dialog" aria-modal="true">
         <div className="mobile-drawer-inner">
+          {/* Prominent Header with Skip Button */}
+          <div className="mobile-drawer-header">
+            <div className="mobile-drawer-brand">
+              <span className="logo-emblem">🌿</span>
+              <span className="drawer-brand-name font-serif">CLEAN CREATIONS</span>
+            </div>
+            <button 
+              type="button" 
+              className="mobile-drawer-skip-btn" 
+              onClick={closeMobileMenu}
+              aria-label="Skip menu and return to website"
+              id="mobile-drawer-skip-btn"
+            >
+              <span>Skip</span>
+              <X size={18} />
+            </button>
+          </div>
+
           <ul className="mobile-nav-links">
             <li>
               <a href="#about" onClick={closeMobileMenu}>
@@ -142,7 +178,7 @@ export default function Navbar({ onOpenMenuModal, onOpenReservationModal }) {
 
           <div className="mobile-drawer-actions">
             <button 
-              type="button"
+              type="button" 
               className="btn btn-secondary-outline btn-lg w-full"
               onClick={() => { closeMobileMenu(); onOpenMenuModal(); }}
               id="mobile-view-menu-btn"
@@ -151,13 +187,22 @@ export default function Navbar({ onOpenMenuModal, onOpenReservationModal }) {
               <span>Explore Full Menu</span>
             </button>
             <button 
-              type="button"
+              type="button" 
               className="btn btn-primary-gold btn-lg w-full"
               onClick={() => { closeMobileMenu(); onOpenReservationModal(); }}
               id="mobile-reserve-table-btn"
             >
               <Calendar size={18} />
               <span>Reserve a Table</span>
+            </button>
+            <button 
+              type="button" 
+              className="mobile-drawer-skip-bottom-btn"
+              onClick={closeMobileMenu}
+              id="mobile-drawer-skip-bottom-btn"
+            >
+              <X size={16} />
+              <span>Skip & Return to Website</span>
             </button>
           </div>
 
